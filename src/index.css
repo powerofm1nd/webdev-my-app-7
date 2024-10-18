@@ -1,22 +1,28 @@
-/* Например, можно добавить кастомные стили для элементов */
 [data-bs-theme="dark"] {
   --bs-body-bg: #343a40 !important;
   --bs-body-color: #f8f9fa !important;
-  /* Добавьте другие переменные для темных цветов */
+
+  --label-bg: #ffffff !important; 
+  --label-text-color: #000000 !important; 
 }
 
 [data-bs-theme="light"] {
   --bs-body-bg: #ffffff !important; 
   --bs-body-color: #212529 !important;
-  /* Добавьте другие переменные для светлых цветов */
+
+  --label-bg: #ffffff !important; 
+  --label-text-color: #000000 !important; 
 }
 
-/* Примените эти переменные ко всем нужным элементам */
 label {
   background-color: var(--bs-body-bg)  !important;
   color: var(--bs-body-color)  !important;
 }
 
+.ant-form-item-required{
+  background-color: var(--label-bg)  !important;
+  color: var(--label-text-color)  !important;
+}
 
 
 body{
