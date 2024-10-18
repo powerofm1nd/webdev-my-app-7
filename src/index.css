@@ -1,0 +1,27 @@
+/* Например, можно добавить кастомные стили для элементов */
+[data-bs-theme="dark"] {
+  --bs-body-bg: #343a40 !important;
+  --bs-body-color: #f8f9fa !important;
+  /* Добавьте другие переменные для темных цветов */
+}
+
+[data-bs-theme="light"] {
+  --bs-body-bg: #ffffff !important; 
+  --bs-body-color: #212529 !important;
+  /* Добавьте другие переменные для светлых цветов */
+}
+
+/* Примените эти переменные ко всем нужным элементам */
+label {
+  background-color: var(--bs-body-bg)  !important;
+  color: var(--bs-body-color)  !important;
+}
+
+
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  transition: all .1s ease-in-out;
+}
+
